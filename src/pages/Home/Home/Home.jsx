@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import EventsCard from '../EventsCard/EventsCard'
 import Banner from '../Banner/Banner'
+import Mission from '../Mission/Mission'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <title>SEU || Home</title>
       </Helmet>
       <Banner/>
+      <Mission/>
       <EventsCard></EventsCard>
     </div>
   )

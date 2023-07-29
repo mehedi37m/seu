@@ -12,9 +12,8 @@ const EventsCard = () => {
   return (
     <>
       
-      <img src={events.image} alt="" />
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-        {events.map((event) => (
+        {events.map((event,index) => (
           <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl:">
             <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
             <img
