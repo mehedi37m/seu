@@ -1,5 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import EventsCard from '../EventsCard/EventsCard'
+import Banner from '../Banner/Banner'
 
 const Home = () => {
   return (
@@ -7,7 +9,8 @@ const Home = () => {
       <Helmet>
         <title>SEU || Home</title>
       </Helmet>
-      <h1>Home</h1>
+      <Banner/>
+      <EventsCard></EventsCard>
     </div>
   )
 }

@@ -5,6 +5,9 @@ const NavBar = () => {
   const navOption = (
     <>
       <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
         <Link to="/about">About</Link>
       </li>
       <li>
@@ -42,7 +45,7 @@ const NavBar = () => {
           ></ul>
         </div>
 
-        <a className="btn btn-ghost normal-case text-xl">SEU</a>
+        <Link to='/' className="btn btn-ghost normal-case text-xl">SEU</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navOption}</ul>

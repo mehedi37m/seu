@@ -7,6 +7,7 @@ const About = () => {
         <Helmet>
         <title>SEU || About</title>
       </Helmet>
+     
         About
         
         </div>
