@@ -5,17 +5,19 @@ const NavBar = () => {
   const navOption = (
     <>
       <li>
-        <Link to='/about'>About</Link>
+        <Link to="/about">About</Link>
       </li>
       <li>
-        <Link to='/events'>Events</Link>
+        <Link to="/events">Events</Link>
       </li>
-      
+      <li>
+        <Link to="/gallery">Gallery</Link>
+      </li>
     </>
   );
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-[#253B80] text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -39,13 +41,14 @@ const NavBar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           ></ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+
+        <a className="btn btn-ghost normal-case text-xl">SEU</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navOption}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn">Login</a>
       </div>
     </div>
   );
